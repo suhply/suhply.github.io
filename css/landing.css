@@ -1,0 +1,384 @@
+/* ==========================================================================
+General Suhply CSS files.
+========================================================================== */
+
+* {
+    /* border: 1px solid blue;     */
+}
+
+html {
+    font-size: 16px;
+    /* 16px = 1rem */
+    line-height: 1rem;
+}
+
+html,
+body,
+.page {
+    height: 100%;
+    overflow:hidden;
+}
+
+body {
+    overflow: hidden;
+    color: black;
+    font-family: "Lato";
+    font-size: 0.40rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    text-shadow: none;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex: 1;
+    /* To make it static */
+}
+
+.header_left,
+.footer_left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_center,
+.footer_center {
+    flex: 0.5 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border:1px solid green; */
+    position:relative;
+}
+
+.header_primarynavigation {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    /* overrides boostrap */
+}
+
+
+.header_right,
+.footer_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_profilepicwrapper,
+.header_right_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header_profilepicwrapper,
+.footer_logowrapper {
+    margin-left: 0.75rem;
+}
+
+.header_right_wrapper,
+.footer_right_wrapper,
+.content_rightpanel_filterwrapper {
+    margin-right: 0.75rem;
+}
+
+#header_profilepic {
+    width: 1rem;
+    /* border: 0.125rem solid black; */
+}
+
+#header_checkoutBasket,
+#header_searchIcon {
+    width: 1.2rem;
+    padding: 0.25rem;
+}
+
+
+
+
+.content {
+    display: flex;
+    flex: 10;
+}
+
+.content_leftpanel {
+    flex: 1;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+.content_leftpanel > slick {
+    margin-right: 50%;
+    max-width: 100%;
+    height: 200%;
+}
+
+.content_leftpanel .heroImage {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.content_leftpanel .heroImage >img {
+    min-height: 100%;
+    width:100%;
+}
+
+.content_rightpanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content_rightpanel_aboveimagegrid {
+    flex: 0.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content_rightpanel_dummypanel,
+.content_rightpanel_productclass,
+.content_rightpanel_filterwrapper {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:nowrap;
+    align-content:center;
+    /* letter-spacing:initial; */
+    font-size:0.45rem;
+    text-align:center;
+}
+
+.content_rightpanel_dummypanel {
+    margin-left: 0.75rem;
+}
+
+.content_rightpanel_filterwrapper {
+    justify-content:flex-end;
+}
+
+.content_rightpanel_imagegrid {
+    flex: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: flex-start;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.imageCard {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 8rem;
+    position: relative;
+    min-width:50%;
+}
+
+.imageCard > img {
+    width: 100%;
+}
+
+.AddToBasket {
+    background: url("../img/Add-to-bag_maroon.png");
+    position: absolute;
+    bottom: 0.125rem;
+    right: 0.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    z-index: 500;
+    display: flex;
+    cursor: pointer;
+}
+
+.AddToBasket_hero {
+    background: url("../img/Add-to-bag_maroon.png");
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    display: flex;
+    cursor: pointer;
+}
+
+.AddToBasket_cost {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.2rem;
+    padding-top: 0.3rem;
+    letter-spacing: initial;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.loveHeart {
+    content: url("../img/loveheart.png");
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 0.75rem;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+#content_filtericon {
+    width: 1rem;
+    padding: 0.25rem;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    /* To make it static */
+}
+
+.footer_logocenterwrapper,
+.footer_logowrapper,
+.footer_right_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 2rem;
+}
+
+.translucentPanel {
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: calc(calc(100%/12) - 1px);
+    display: flex;
+    justify-content: center;
+    min-height:2rem;
+}
+
+.translucentPanelIcon {
+    height: 2rem;
+    width: 4.5rem;
+}
+
+.translucentPanelChildIcon {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.4rem 0 0.4rem;
+}
+
+.translucentPanelChild {
+    flex:1;
+    align-items:center;
+}
+
+.translucentPanelChild.left {
+    flex: 1;
+    justify-content:flex-start;
+}
+
+.translucentPanelChild.center {
+    flex: 1;
+    display:flex;
+    justify-content:space-between;
+    padding: 0 7rem 0 7rem;
+    align-items:center;
+}
+
+.translucentPanelChild.right {
+    flex: 1;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:1rem;
+}
+
+
+.content_leftpanel > .translucentPanel {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+
+    .imageCard {
+        min-width:50%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .imageCard {
+        min-width:33.3%;
+    }
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .content_leftpanel {
+        display: flex;
+    }
+
+    .translucentPanel {
+        width:50%;
+    }
+
+    .content_rightpanel {
+        background: #f4f5f8;
+    }
+
+    .content_rightpanel_imagegrid {
+        margin: 0.125rem 1rem 0rem 1rem;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

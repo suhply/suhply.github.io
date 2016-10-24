@@ -1,0 +1,227 @@
+    /* ==========================================================================
+Landing Page Custom Styles
+   ========================================================================== */
+    
+    html {
+        font-size: 16px;
+        /* 16px = 1rem */
+        line-height: 1rem;
+    }
+    
+    div {
+        /* border:  2px solid red; */
+    }
+    
+    .navbar {
+        background: white;
+        /* margin: 1rem 1rem 0.5rem 1rem; */
+        margin-bottom: 0rem;
+        height: auto;
+        min-height: 6rem;
+        border: 0px;
+        text-align: center;
+    }
+
+    .navbar-header {
+        min-height: 6rem;
+    }
+
+    .navbar-toggle.collapsed .icon-bar{
+        background-color: black;
+    }
+    
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+    
+    ._suhplyBranding img {
+        width: 3rem;
+    }
+    
+    .nav .navbar-nav {
+        vertical-align: top;
+    }
+    /* Without the next one, the dropdown menu on a phone in the landing page isn't center aligned */
+    
+    .nav.navbar-nav.container-fluid {
+        padding: 0;
+    }
+    
+    .navbar-collapse {
+        margin-top: 3rem;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a,
+    ._customSizeTagLine {
+        color: black;
+        font-family: "Lato";
+        font-size: 0.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.125rem;
+        text-shadow: none;
+    }
+    
+    ._tagline {
+        display: block;
+        font-family: "Lato";
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-style: normal;
+        text-align: center;
+        padding-top: 0.5rem;
+        color: #82a3ac;
+    }
+    
+    ._binaryselection {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    ._binaryselection .col-xs-6 {
+        padding: 0;
+    }
+    
+    ._selector {
+        font-family: "Lato";
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        font-weight: 400;
+        font-style: normal;
+        width: 2.5rem;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        vertical-align: center;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    }
+
+    ._selector:hover{
+        cursor: pointer;
+    }
+    
+    ._selector._black {
+        background: black;
+    }
+    
+    ._selector._blue {
+        background: #82a3ac;
+    }
+    
+    ._customSizeTagLine {
+        padding: 1rem;
+        font-size: 0.5rem;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #82a3ac;
+    }
+    
+    ._imageSlider,
+    ._sliderimage {
+        height: 20rem;
+    }
+    
+    ._imageSlider > .container-fluid {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .im-centered {
+        margin: auto;
+    }
+
+    .row.im-centered {
+        max-width: 24rem;
+    }
+    
+    .footer {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        background: black;
+        color: white;
+        text-align: left;
+        font-size: 0.5rem;
+    }
+    
+    .footer ul {
+        list-style-type: none;
+    }
+    
+    .footer ul li a {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: auto;
+    }
+    
+    .footer ul li a:hover {
+        color: #82a3ac;
+    }
+    
+    .footer ._suhplyBranding img {
+        -webkit-filter: invert(100%);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer ul li:first-child {
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+    }
+    /* Extra small devices (phones, less than 768px) */
+    /* Doesn't exist as that's the default.*/
+    /* Small devices (tablets, 768px and up) */
+    
+    @media only screen and (min-width: 768px) {
+                
+        html{
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        } 
+
+        .navbar-collapse {
+            margin-top: 0rem;
+        }
+
+        .navbar-collapse.collapse {
+            display: inline-block !important;
+        }
+
+        ._gender {
+            margin-top: -1rem;
+        }
+
+        ._tagline {
+            margin-top: -4.5rem;
+        }
+
+        .footer ._suhplyBranding img {
+            margin-top: 0rem;    
+        }    
+
+        .nav .navbar .navbar-inverse {
+            margin-top: 2rem 2rem 1rem 2rem;
+        }
+    }
+    /* Medium devices (desktops, 992px and up) */
+    
+    @media only screen and (min-width: 992px) {
+
+        html{
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        }
+
+        ._suhplyBranding img {
+            width: 3.5rem;
+        } 
+        
+    }
+    /* Large devices (large desktops, 1200px and up) */
+    
+    @media only screen and (min-width: 1200px) {
+    }

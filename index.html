@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="" ng-app="indexPageApp">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Suh'Ply</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="suhply.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,200,400">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <!-- Suhply CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- For Fontawesome. This needs to be in the head. Don't move it to after the body -->
+    <script src="https://use.fontawesome.com/ae84ad6cc2.js"></script>
+</head>
+
+<body ng-controller="indexPageController">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar-header col-md-3">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand _suhplyBranding " href="#">
+                        <img alt="Suh'Ply" src="img/Suh'ply_logo.png">
+                    </a>
+                </div>
+                <div class="im-centered">
+                    <div class="row im-centered">
+                        <div id="navbar" class="navbar-collapse collapse im-centered">
+                            <ul class="nav navbar-nav">
+                                <li ng-repeat="item in navigation">
+                                    <a ng-href="{{item.link}}" ng-bind="item.text"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.navbar-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-sm-12">
+                    <div class="_tagline">Fashion That Fits</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="_cmin" class="_binaryselection">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-xs-6 text-right">
+                    <div class="_selector _black" ng-click="genderSelection='M'">M</div>
+                </div>
+                <div class="col-xs-6 text-left">
+                    <div class="_selector _blue" ng-click="genderSelection='F'">F</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="_imageSlider">
+        <div class="container-fluid">
+            <slick infinite=true dots=false speed=3000 slides-to-show=1 center-mode=true 
+                variable-width=true mobile-first=true responsive=true autoplay=true 
+                autoplay-speed=5000 pause-on-hover=true pause-on-focus=true prev-arrow=false 
+                next-arrow=false draggable=true init-onload=true swipe-to-slide=true data="sliderImages" ng-if="sliderImages.length">
+                <div ng-repeat="image in sliderImages">
+                    <img class="_sliderimage img-responsive" ng-src="{{image.image}}">
+                </div>
+            </slick>
+        </div>
+    </section>
+
+
+
+    <section class="_customSizeTagLine">
+        <div class="container">
+            A custom sized clothing store
+        </div>
+    </section>
+    <section class="_explainervideo container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rb6xzuLASkw"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="_infoPanel col-xs-6 col-sm-4 col-lg-2">
+                    <ul>
+                        <li>Company Info</li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <nav class="_infoPanel col-xs-6 col-sm-4 col-lg-2">
+                    <ul>
+                        <li>Customer Service</li>
+                        <li><a href="#">Free Shipping</a></li>
+                        <li><a href="#">Free Returns</a></li>
+                        <li><a href="#">Full Refunds</a></li>
+                        <li><a href="#">Taking your order</a></li>
+                        <li><a href="#">Do I have to pay tax?</a></li>
+                    </ul>
+                </nav>
+                <nav class="_suhplylogo _suhplyBranding col-xs-12 col-sm-4 col-lg-2 col-lg-offset-6">
+                    <img alt="Suh'Ply" src="img/Suh'ply_logo.png">
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript Library Inclusions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- TODO Angular JS. Ensure min version is enabled for production-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="js/vendor/slick.js"></script>
+    <!-- Angular App for the index Page -->
+    <script src="js/ng/app/indexPage/ngIndexPage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

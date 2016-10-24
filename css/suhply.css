@@ -1,0 +1,382 @@
+/* ==========================================================================
+General Suhply CSS files.
+========================================================================== */
+
+html {
+    font-size: 16px;
+    /* 16px = 1rem */
+    line-height: 1rem;
+}
+
+._mobilenavigation {
+    color: black;
+    font-family: "Lato";
+    font-size: 0.40rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    text-shadow: none;
+    margin-top: 1rem;
+    vertical-align: center;
+    min-height: 2rem;
+}
+
+ul._navList {
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+._navItem {
+    display: inline-block;
+    float: none;
+    padding: 0 0.25rem 0 0.25rem;
+    vertical-align: center;
+    line-height: 1rem;
+}
+
+._profilepic {
+    width: .75rem;
+    border: 0.125rem solid black;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+._checkoutBasket {
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+._searchIcon {
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+._mainHeader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    background: white;
+    padding-bottom: 1rem;
+}
+
+._mainFooter {
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0px;
+    left: 0px;
+}
+
+#_closeButton {
+    text-align: right;
+    padding-right: 0.25rem;
+}
+
+#_callToAction {
+    color: black;
+    font-family: "Lato";
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    text-shadow: none;
+    vertical-align: center;
+    min-height: 2rem;
+    margin: 0rem 1.5rem 0 1.5rem;
+}
+
+._saveSizePopup {
+    font-size:10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 18rem;
+    height: 25rem;
+    background: white;
+    margin-left: -9rem;
+    margin-top: -12.5rem;
+    z-index: 999;
+}
+
+._scrollMore {
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 2.3rem;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+._scrollMoreIcon {
+    height: 2rem;
+    width: 4.5rem;
+}
+
+._footerActions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.25rem;
+    padding-bottom: 0.2rem;
+}
+
+._footerActions > img {
+    height: 2rem;
+}
+
+._footerActions>img._footerLogo {
+    padding-left: 1rem;
+}
+
+._footerActions>img._footerChatIcon {
+    padding-right: 1rem;
+}
+
+._secondaryHeader {
+    color: black;
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    text-shadow: none;
+    text-align: center;
+}
+
+#filterIcon {
+    height: 0.75rem;
+    position: absolute;
+    right: 1rem;
+}
+
+._productName {
+    text-align: center;
+    vertical-align: center;
+}
+
+._secondaryHeader #_filter {
+    height: 1rem;
+    float: right;
+    margin-right: 1rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.ding {
+    border: 2px solid red;
+}
+
+._imageCard {
+    padding:  0 0 0 0.125rem;
+    /* height: 15rem; */
+    height: 15rem;
+    overflow: hidden;
+    border: none;
+}
+
+._image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+._mainSection {
+    margin-top: 1rem auto;
+    padding-top: 5rem;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+/* Large Screen Left Side Full Size Image */
+
+._fullSizeImageArea {
+    display: flex;
+    border:  2px solid black;
+    padding-top: 5rem;
+    padding-bottom: 2.2rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height:  100%;
+}
+
+._fullSizeImageArea img {
+    max-width:  100%;
+}
+
+/* Info Panels */
+
+._infopanel {
+    display: flex;
+    height: 3rem;
+    width: 12rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: none;
+    justify-content: center;
+    align-items: center;
+    background: #82a3ac;
+    color: white;
+}
+
+._infopanel ._panel {
+    display: inherit;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+
+._infopanel ._panel._left {
+    width: 3rem;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+._infopanel ._panel._center {
+    width: 6rem;
+    background: #edf2f5;
+    color: black;
+    font-size: 0.75rem;
+}
+
+._infopanel ._panel._center._dropdown {
+    width: 6rem;
+    height: 0rem;
+    background: white;
+    color: black;
+    display: flex;
+    position: absolute;
+    margin-left: -2.44rem;
+    margin-top: 1.3rem;
+    z-index: 999;
+    padding-top: 0rem;
+    /* max-height:0rem; */
+    overflow: hidden;
+    transition: height 1.15s ease-out;
+    cursor: pointer;
+}
+
+._infopanel ._panel._center:hover ._panel._center._dropdown,
+._infopanel ._panel._right:hover ._panel._center._dropdown {
+    height: auto;
+    max-height: 300rem;
+    transition: height 1.25s ease-in;
+    padding-top: 0.5rem;
+    border: 1px solid black;
+}
+
+._infopanel ._panel._center._dropdown > ul > li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+._infopanel ._panel._right {
+    width: 3rem;
+    background: #82a3ac;
+    color: white;
+}
+
+._infopanel ._panel._left._inner {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 1.1rem;
+    content: url("../img/scroll-arrow-icon.png");
+    position: absolute;
+}
+
+._infopanel ._panel._left._dropdown {
+    width: 3rem;
+    height: 0rem;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    display: flex;
+    position: absolute;
+    margin-top: 6.6rem;
+    z-index: 999;
+    padding-top: 0rem;
+    overflow: hidden;
+    transition: height 1.15s ease-out;
+    cursor: pointer;
+}
+
+._infopanel ._selected {
+    text-align: center;
+}
+
+._infopanel ._panel._left:hover ._panel._left._dropdown {
+    height: auto;
+    max-height: 300rem;
+    transition: height 1.25s ease-in;
+    padding-top: 0.5rem;
+}
+
+._infopanel ._panel._left._dropdown > ul > li {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+._infopanel ._panel._right._inner {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    content: url("../img/scroll-arrow-icon.png");
+    position: absolute;
+}
+
+/*  End Info Panels */
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    ._scrollMore {
+        padding-left: 50%;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,279 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="" ng-app "landingPageApp">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Suh'Ply</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="suhply.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,200,400,600,800">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <!-- Suhply CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Some common styles from the landing page -->
+    <link rel="stylesheet" href="css/suhply.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- For Fontawesome. This needs to be in the head. Don't move it to after the body -->
+    <script src="https://use.fontawesome.com/ae84ad6cc2.js"></script>
+</head>
+
+<body ng-controller="landingPageController">
+    <div class="_mainHeader">
+        <img class="_profilepic" src="img/profile-placeholder.png">
+        <img class="_checkoutBasket" src="img/Bag_black.png">
+        <img class="_searchIcon" src="img/magnify-glass_teal.png">
+        <header>
+            <nav id="_primaryMobileNavigation" class="_mobilenavigation">
+                <ul class="_navList list-unstyled">
+                    <li class="_navItem">Bottoms</li>
+                    <li class="_navItem">Tops</li>
+                    <li class="_navItem">Dresses</li>
+                    <li class="_navItem">Outer wear</li>
+                    <li class="_navItem">Stash</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+            
+                <div class="_fullSizeImageArea">
+                    
+                        <img src="img/sampleImages/jeans.jpg">
+                    
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+                    <section class="_saveSizePopup">
+                        <div id="_closeButton">X</div>
+                        <div id="_callToAction">Select your size
+                            <br> to find fashion that fits</div>
+                        <br>
+                        <!-- Check for cm or inches . Default is cm -->
+                        <boolinput id="_cmin" class="_binaryselection">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-xs-6 text-right">
+                                        <div class="_selector _black">CM</div>
+                                    </div>
+                                    <div class="col-xs-6 text-left">
+                                        <div class="_selector _blue">IN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </boolinput>
+                        <!-- Height Infopanel -->
+                        <div class="_infopanel">
+                            <div class="_panel _left">HEIGHT</div>
+                            <div class="_panel _center">123
+                                <div class="_panel _center _dropdown">
+                                    <ul class="list-unstyled">
+                                        <li>6'4"</li>
+                                        <li>6'5"</li>
+                                        <li>6'6"</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="_panel _right">
+                                <div class="_panel _right _inner"></div>
+                            </div>
+                        </div>
+                        <!-- Country Infopanel -->
+                        <div class="_infopanel">
+                            <div class="_panel _left">
+                                <div class="_panel _left _selected"> US
+                                    <!--Replace with Angular Selection -->
+                                </div>
+                                <div class="_panel _left _inner"></div>
+                                <div class="_panel _left _dropdown">
+                                    <ul class="list-unstyled">
+                                        <li>AUS</li>
+                                        <li>IND</li>
+                                        <li>JPN</li>
+                                        <li>AUS</li>
+                                        <li>SRL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="_panel _center">12
+                                <!-- Replace with Angular Selection -->
+                                <div class="_panel _center _dropdown">
+                                    <ul class="list-unstyled">
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="_panel _right">
+                                <div class="_panel _right _inner"></div>
+                            </div>
+                        </div>
+                        <!-- Bra Size Infopanel -->
+                        <div class="_infopanel">
+                            <div class="_panel _left">BRA</div>
+                            <div class="_panel _center">n/a</div>
+                            <div class="_panel _right">
+                                <div class="_panel _right _inner"></div>
+                            </div>
+                        </div>
+                        <div class="_infopanel">
+                            Save Size
+                        </div>
+                    </section>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <section class="_secondaryHeader">
+                                LONG SKINNYS JEANS
+                                <img id="filterIcon" src="img/Filter-icon.png">
+                            </section>
+                        </div>
+                        <div class="col-xs-12">
+                            <section class="_mainSection">
+                                <div class="row _images">
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-md-4 col-xl-2 _imageCard">
+                                        <a href="#" class="thumbnail">
+                                            <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        
+                            <div class="_scrollMore">
+                                <img class="_scrollMoreIcon" src="img/scroll-arrow-icon.png">
+                            </div>
+                        
+                    </div>    
+            </div>
+        </div>
+        <footer class="_mainFooter">
+            <div class="_footerActions">
+                <img class="_footerLogo" src="img/Suh'ply_logo.png">
+                <img class="_footerName" src="img/Suh'plyname_teal.png">
+                <img class="_footerChatIcon" src="img/chat-icon.png">
+            </div>
+        </footer>
+        <!-- Javascript Library Inclusions -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+        </script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <!-- TODO Angular JS. Ensure min version is enabled for production-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script src="js/vendor/slick.js"></script>
+        <!-- Angular App for the landing Page -->
+        <script src="js/ng/app/landingPage/ngLandingPage.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

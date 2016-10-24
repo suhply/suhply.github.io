@@ -1,0 +1,189 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="" ng-app="landingPageApp">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Suh'Ply</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="suhply.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100,200,400,600,800">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <!-- Suhply CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Some common styles from the landing page -->
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- For Fontawesome. This needs to be in the head. Don't move it to after the body -->
+    <script src="https://use.fontawesome.com/ae84ad6cc2.js"></script>
+</head>
+
+<body ng-controller="landingPageController">
+    <div class="page">
+        <header>
+            <div class="header_left">
+                <div class="header_profilepicwrapper">
+                    <img id="header_profilepic" src="img/profile-placeholder.png">
+                </div>
+            </div>
+            <nav class="header_center">
+                    <ul class="list-unstyled header_primarynavigation">
+                        <li>Bottoms</li>
+                        <li>Tops</li>
+                        <li>Dresses</li>
+                        <li>Outer wear</li>
+                        <li>Stash</li>
+                    </ul>
+            </nav>
+            <div class="header_right">
+                <div class="header_right_wrapper">
+                    <img id="header_searchIcon" src="img/magnify-glass_teal.png">
+                    <img id="header_checkoutBasket" src="img/Bag_black.png">
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="content_leftpanel">
+                <!--LEFT PANEL-->
+                <div class="heroImage">
+                    <img ng-src="{{heroimage}}">
+                </div>
+
+                <div class="translucentPanel">
+                    <div class="translucentPanelChild left"></div>
+                    <div class="translucentPanelChild center">
+                        <img class="translucentPanelChildIcon" src="img/Comment.png">
+                        <img class="translucentPanelChildIcon" src="img/information.png">
+                        <img class="translucentPanelChildIcon" src="img/share-icon.png">
+                    </div>
+                    <div class="translucentPanelChild right">
+                        <div class="AddToBasket_hero">
+                            <div class="AddToBasket_cost">$45</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_rightpanel">
+                <div class="content_rightpanel_aboveimagegrid">
+                    <div class="content_rightpanel_dummypanel"></div>
+                    <div class="content_rightpanel_productclass">LONG LONG SKINNY JEANS</div>
+                    <div class="content_rightpanel_filterwrapper">
+                        <img id="content_filtericon" src="img/Filter-icon.png">
+                    </div>
+                </div>
+                <!-- All images in the grid MUST have the same height -->
+                <!-- The number of images in the grid MUST be a multiple of 6 -->
+                <div class="content_rightpanel_imagegrid">
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$37</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans3.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans5.jpeg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans2.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans3.jpg">
+                    </div>
+                    <div class="imageCard">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost">$36</div>
+                        </div>
+                        <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
+                    </div>
+                    <!--Empty card for padding. Angular should send enough cards
+                        to make the number of cards a multiple of 6-->
+                    <div class="imageCard"></div>
+                </div>
+                <div class="translucentPanel">
+                    <img class="translucentPanelIcon" src="img/scroll-arrow-icon.png">
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer_left">
+                <div class="footer_logowrapper">
+                    <img id="footer_logopic" src="img/Suh'ply_logo.png">
+                </div>
+            </div>
+            <div class="footer_center">
+                <div class="footer_logocenterwrapper">
+                    <img id="footer_logocenterpic" src="img/Suh'plyname_teal.png">
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="footer_right_wrapper">
+                    <img id="footer_chatIcon" src="img/chat-icon.png">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Javascript Library Inclusions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!-- TODO Angular JS. Ensure min version is enabled for production-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="js/vendor/slick.js"></script>
+    <!-- Angular App for the landing Page -->
+    <script src="js/ng/app/landingPage/ngLandingPage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

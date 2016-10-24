@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+div {
+    /* border:  2px solid red; */
+}
+
+.navbar {
+    background: white;
+    margin: 2em 2em 1em 2em;
+    height: auto;
+    border: 0px;
+    text-align: center;
+}
+
+._suhplyBranding img {
+    width: 4em;
+    margin: 0 auto;
+    /* padding: 15px 0 15px 25px; */
+}
+
+.nav .navbar-nav {
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+._customSizeTagLine {
+    color: black;
+    font-family: "Lato";
+    font-size: 0.75em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 1em 0 1em;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+
+._customSizeTagLine {
+    padding: 2em;
+    font-size: 1em;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #82a3ac;
+}
+
+._tagline {
+    display: block;
+    font-family: "Lato";
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    padding-left: 7em;
+    padding-top: 0.5em;
+    color: #82a3ac;
+}
+
+._genderselector {
+    border: 1px solid red;
+    font-family: "Lato";
+    font-size: 1em;
+    font-weight: 100;
+    font-style: normal;
+    height: 1.5em;
+    width:  2em;
+    color: white;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+._genderselector._male {
+    
+    background: black;
+}
+
+._genderselector._female {
+    
+    background: #82a3ac ;
+}
+
+._explainervideo {
+    padding: 0em 3em 3em 3em;
+}
+
+._imageSlider,
+._sliderimage {
+    height: 20em;
+}
+
+._imageSlider > .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footer {
+    padding-top: 2em;
+    background: black;
+    color: white;
+    text-align: left;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+    font-size: 0.75em;
+}
+
+.footer ul li a:hover {
+    color:  #82a3ac;
+}
+
+.footer ._suhplyBranding img {
+    -webkit-filter: invert(100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25em;
+}
+
+.footer ul li:first-child {
+    text-transform: uppercase;
+    padding-bottom: 0.75em;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+    .footer ._suhplyBranding img {
+        padding: 15px 0 15px 0;
+        margin-top: 0em;
+    }
+
+    ._imageSlider,
+    ._sliderimage {
+        height: 30em;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .navbar-inverse .navbar-nav>li>a {
+        padding: 10px 3em 0 3em;
+    }
+    ._imageSlider,
+    ._sliderimage {
+        height: 40em;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
