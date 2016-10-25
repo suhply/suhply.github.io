@@ -30,7 +30,7 @@
     <script src="https://use.fontawesome.com/ae84ad6cc2.js"></script>
 </head>
 
-<body ng-controller="landingPageController">
+<body ng-controller="productController">
     <div class="page">
         <header>
             <div class="header_left">
@@ -59,7 +59,7 @@
             <div class="content_leftpanel">
                 <!--LEFT PANEL-->
                 <div class="heroImage">
-                    <img ng-src="{{heroimage}}">
+                    <img ng-src="{{hero.imageurl}}">
                 </div>
 
                 <div class="translucentPanel">
@@ -71,7 +71,7 @@
                     </div>
                     <div class="translucentPanelChild right">
                         <div class="AddToBasket_hero">
-                            <div class="AddToBasket_cost">$45</div>
+                            <div class="AddToBasket_cost" ng-bind="hero.sellingprice"></div>
                         </div>
                     </div>
                 </div>
@@ -79,14 +79,24 @@
             <div class="content_rightpanel">
                 <div class="content_rightpanel_aboveimagegrid">
                     <div class="content_rightpanel_dummypanel"></div>
-                    <div class="content_rightpanel_productclass">LONG LONG SKINNY JEANS</div>
+                    <div class="content_rightpanel_productclass" ng-bind="selectedCategory"></div>
                     <div class="content_rightpanel_filterwrapper">
                         <img id="content_filtericon" src="img/Filter-icon.png">
                     </div>
                 </div>
                 <!-- All images in the grid MUST have the same height -->
                 <!-- The number of images in the grid MUST be a multiple of 6 -->
-                <div class="content_rightpanel_imagegrid">
+                <div class="content_rightpanel_imagegrid" >
+
+                    <div class="imageCard" ng-repeat = "product in products track by $index" ng-click="selectProduct(product)">
+                        <div class="loveHeart"></div>
+                        <div class="AddToBasket">
+                            <div class="AddToBasket_cost" ng-bind="product.sellingprice"></div>
+                        </div>
+                        <img alt="jeans" ng-src="{{product.imageurl}}">
+                    </div>
+
+<!--
                     <div class="imageCard">
                         <div class="loveHeart"></div>
                         <div class="AddToBasket">
@@ -142,7 +152,7 @@
                             <div class="AddToBasket_cost">$36</div>
                         </div>
                         <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
-                    </div>
+                    </div> -->
                     <!--Empty card for padding. Angular should send enough cards
                         to make the number of cards a multiple of 6-->
                     <div class="imageCard"></div>
