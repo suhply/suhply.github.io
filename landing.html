@@ -39,12 +39,26 @@
                 </div>
             </div>
             <nav class="header_center">
-                    <ul class="list-unstyled header_primarynavigation">
-                        <li>Bottoms</li>
-                        <li>Tops</li>
-                        <li>Dresses</li>
-                        <li>Outer wear</li>
-                        <li>Stash</li>
+                <ul class="header_primarynavigation">
+                    <li>Bottoms
+                        <div>
+                            <ul class="header_secondarynavigation">
+                                <li>Jeans</li>
+                                <li>Skirts</li>
+                                <li>Leggings</li>
+                        </div>
+                    </li>
+                    <li>Tops
+                        <div>
+                            <ul class="header_secondarynavigation">
+                                <li>Shirts</li>
+                                <li>Tops</li>
+                                <li>Tops2</li>
+                        </div>
+                    </li>
+                    <li>Dresses</li>
+                    <li>Outer wear</li>
+                    <li>Stash</li>
                     </ul>
             </nav>
             <div class="header_right">
@@ -54,14 +68,12 @@
                 </div>
             </div>
         </header>
-
         <div class="content">
             <div class="content_leftpanel">
                 <!--LEFT PANEL-->
                 <div class="heroImage">
                     <img ng-src="{{hero.imageurl}}">
                 </div>
-
                 <div class="translucentPanel">
                     <div class="translucentPanelChild left"></div>
                     <div class="translucentPanelChild center">
@@ -86,9 +98,8 @@
                 </div>
                 <!-- All images in the grid MUST have the same height -->
                 <!-- The number of images in the grid MUST be a multiple of 6 -->
-                <div class="content_rightpanel_imagegrid" >
-
-                    <div class="imageCard" ng-repeat = "product in products track by $index" ng-click="selectProduct(product)">
+                <div class="content_rightpanel_imagegrid">
+                    <div class="imageCard" ng-repeat="product in products track by $index" ng-click="selectProduct(product)">
                         <div class="loveHeart"></div>
                         <div class="AddToBasket">
                             <div class="AddToBasket_cost" ng-bind="product.sellingprice"></div>
@@ -98,76 +109,14 @@
                             <img src="img/Suh'ply_logo.png">
                             <div class="hover_productname" ng-bind="product.name"></div>
                             <div class="hover_description" ng-bind="product.short_description"></div>
-                            
                         </div>
                     </div>
-
-<!--
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$37</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans2.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans3.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans5.jpeg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans2.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans3.jpg">
-                    </div>
-                    <div class="imageCard">
-                        <div class="loveHeart"></div>
-                        <div class="AddToBasket">
-                            <div class="AddToBasket_cost">$36</div>
-                        </div>
-                        <img alt="jeans" src="img/sampleImages/jeans4.jpeg">
-                    </div> -->
-                    <!--Empty card for padding. Angular should send enough cards
-                        to make the number of cards a multiple of 6-->
                     <div class="imageCard"></div>
                 </div>
                 <div class="translucentPanel">
                     <img class="translucentPanelIcon" src="img/scroll-arrow-icon.png">
                 </div>
             </div>
-
         </div>
         <footer>
             <div class="footer_left">
