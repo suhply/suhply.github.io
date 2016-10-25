@@ -12,28 +12,20 @@ landingPageApp.service('productsService', ['$http', function($http) {
 
 landingPageApp.controller('productController', ['$scope', '$http', 'productsService', function($scope, $http, productsService) {
 
-    $scope.selectedCategory = "Jeans";
-    
+    $scope.selectedCategory = "Skirts";
+
     getProducts();
 
     function getProducts() {
         productsService.getProducts()
             .then(function(response) {
                 var productData = response.data;
-                console.log(productData);
-
                 $scope.products = productData[$scope.selectedCategory];
                 $scope.hero = $scope.products[0];
-
-                console.log ($scope.products);
-
-            }
-        );
+            });
     }
-
 
     $scope.selectProduct = function(product) {
         $scope.hero = product;
     }
 }]);
-
