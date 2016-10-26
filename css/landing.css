@@ -65,7 +65,8 @@ header {
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    list-style:none
+    list-style:none;
+    cursor:pointer;
 }
 
 .header_primarynavigation > li {
@@ -81,7 +82,7 @@ header {
     border-radius: 0 0 2px 2px;
     display:none;
     position:absolute;
-    width: 1000%;
+    width: 120%;
     list-style:none;
     padding:0.5rem 0 0 0;
     z-index:999;
@@ -90,6 +91,8 @@ header {
 
 .header_secondarynavigation > li {
     margin:0.5rem 0 0.5rem 0;
+    cursor:pointer;
+    padding-left:0.5rem;
 }
 
 .header_primarynavigation > li:hover .header_secondarynavigation {
