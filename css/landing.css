@@ -143,11 +143,11 @@ header {
     display: none;
     justify-content: center;
     align-items: flex-start;
-    overflow: auto;
+    overflow: hidden;
     position:relative;
 }
 
-.content_leftpanel .heroImage {
+.heroImage {
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -338,7 +338,7 @@ footer img {
     left: 0rem;
     display: flex;
     justify-content: center;
-    min-height:2rem;
+     min-height:2rem;
 }
 
 .translucentPanelIcon {
@@ -383,6 +383,10 @@ footer img {
     display:flex;
     justify-content:space-around;
     align-items:center;
+}
+
+.content_rightpanel > .translucentPanel {
+    cursor: pointer;
 }
 
 /* Media Queries */
